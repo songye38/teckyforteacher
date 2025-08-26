@@ -1,0 +1,67 @@
+
+
+.label-list {
+    display: flex;                  
+    flex-wrap: wrap;     
+    align-items: center;      
+   
+}
+
+
+.label-item {
+    font-size: 20px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    padding: 12px 14px;              
+    border-radius: 8px;
+    border: 2px solid #ccc;        
+    background-color:white;         
+    display: flex;                  
+    align-items: center;
+    gap: 8px;                       
+}
+
+.label-item.active {
+       border: 2.5px solid #153F76;
+       background-color: #e3f2fd;
+       font-weight: 600;
+}
+
+
+.select-file {
+  display: inline-flex;      /* flex로 가로 배치 */
+  align-items: center;       /* 수직 중앙 정렬 */
+  gap: 8px;                  /* 단위 꼭 붙이기 */
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 8px 16px;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;    /* 선택 버튼 배경 */
+  text-align: center;
+}
+
+.select-file:hover {
+  background-color: #f0f0f0; /* 호버 시 배경 */
+    border: 2px dotted black;
+}
+
+
+
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px; /* 글자 크기 조절 */
+}
+.my-table thead {
+  font-size: 22px; /* 글자 크기 조절 */
+  
+} 
+
+.my-table th,
+.my-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
