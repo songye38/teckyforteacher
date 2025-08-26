@@ -28,7 +28,7 @@ export default function Header() {
       }}
     >
       <a
-        href="https://impact-25-prototype.vercel.app/"  // 이동할 링크
+        href="https://www.teckyforteacher.co.kr/"  // 이동할 링크
         style={{ textDecoration: 'none' }} // 텍스트 밑줄 제거
         target="_self" // 새 탭에서 열기
         rel="noopener noreferrer"
