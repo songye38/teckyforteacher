@@ -274,7 +274,7 @@ export default function Module1() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        backgroundColor: 'white',
+        backgroundColor: '#F5F0EA',
         padding: 30,
         borderRadius: 12,
         boxShadow: '0 8px 24px rgba(0,0,0,0.3)',

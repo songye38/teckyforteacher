@@ -1,0 +1,21 @@
+/* 학습 버튼 공통 스타일 */
+.train-button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #184175; /* 기본 파랑 */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.train-button:hover {
+    background-color: #2F609F; /* hover 시 진한 파랑 */
+}
+
+.train-button:disabled {
+    background-color: #999; /* 비활성화 상태 */
+    cursor: not-allowed;
+}

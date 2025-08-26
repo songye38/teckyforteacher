@@ -23,51 +23,172 @@ export default function Main() {
   ];
 
   return (
-    <div style={{ padding: 40, fontFamily: "'Noto Sans KR', sans-serif", color: '#222',marginTop:60, }}>
-      <h1 style={{ fontSize: 36, marginBottom: 30 }}>메인 페이지</h1>
-      <div style={{ display: 'flex', gap: 30, flexWrap: 'wrap' }}>
-        {buttons.map(({ label, desc, path }) => (
-          <div
-            key={label}
-            style={{
-              border: '2px solid #1976d2',
-              borderRadius: 12,
-              padding: 24,
-              width: 280,
-              boxShadow: '0 4px 10px rgba(25, 118, 210, 0.15)',
+    <div style={{ padding: 80, display: 'flex', flexDirection: 'row', gap: 20, alignItems: 'center', paddingTop: 60 }}>
+      {/* 왼쪽의 설명이 들어가는 영역 */}
+      <div
+        style={{
+          textAlign: 'left',
+          alignSelf: 'flex-start', // 부모 flex 내에서 위/아래 위치는 그대로, 가로는 왼쪽으로
+          width: '50%',
+        }}
+      >
+        <div style={{ textAlign: 'left', alignSelf: 'flex-start' }}>
+          <h1 style={{
+            color: 'black',
+            fontSize: 38,
+            fontWeight: '600',
+            userSelect: 'none',
+            fontFamily: "Outfit",
+          }}>
+            Learn By Touch
+          </h1>
+          <h3 style={{ fontFamily: 'Pretendard', marginTop: 8,fontSize:22 }}>
+            손끝으로 느끼며 배우는 체험형 학습 플랫폼
+          </h3>
+        </div>
+
+        {/* 간단 소개 */}
+        <p style={{ fontFamily: 'Pretendard', marginTop: 16, maxWidth: 600, lineHeight: 1.5, fontSize: 20 }}>
+          Tecky는 데이터를 손끝으로 느끼고, 소리와 진동으로 체험하며 학습하는 새로운 방식의 교육 플랫폼입니다.
+          AI와 센서를 활용한 체험형 실습으로, 누구나 쉽게 배우고 탐험할 수 있습니다.
+        </p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 24,marginTop:80 }}>
+          <h1>세가지 핵심 기능</h1>
+          {/* 1. 핵심 기능 */}
+          <div style={{
+            flex: 1,
+            padding: 16,
+            paddingLeft: 40,
+            display: 'flex',
+            flexDirection: 'column',
+            borderLeft: '4px solid black', // ← 왼쪽에만 선
+            alignItems: 'flex-start', // ← 자식 요소 왼쪽 정렬
+          }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginBottom: 20,
+            }}>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>1. 데이터 수집</h4>
+              <p style={{ margin: 0, fontSize: 18 }}>아두이노를 이용해 직접 데이터 수집</p>
+            </div>
+
+            <button style={{
+              backgroundColor: '#2F6EBF',
+              color: '#fff',
+              padding: '12px 28px',
+              borderRadius: 8,
+              border: 'none',       // ← 테두리 제거
+              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
+              fontWeight: 600,
+              fontFamily: 'Pretendard',
               cursor: 'pointer',
-              transition: 'background-color 0.3s ease',
-            }}
-            onClick={() => navigate(path)}
-            onKeyDown={(e) => { if (e.key === 'Enter') navigate(path); }}
-            role="button"
-            tabIndex={0}
-          >
-            <h2 style={{ fontSize: 24, marginBottom: 12, color: '#1976d2' }}>{label}</h2>
-            <p style={{ fontSize: 16, color: '#555' }}>{desc}</p>
-            <button
-              style={{
-                marginTop: 20,
-                padding: '10px 20px',
-                fontSize: 16,
-                borderRadius: 8,
-                border: 'none',
-                backgroundColor: '#1976d2',
-                color: 'white',
-                cursor: 'pointer',
-                boxShadow: '0 4px 8px rgba(25, 118, 210, 0.4)',
-                transition: 'background-color 0.3s ease',
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                navigate(path);
-              }}
-            >
-              이동하기
+              fontSize: 18,
+            }}>
+              지금 시작하기
             </button>
           </div>
-        ))}
+          {/* 2. 핵심 기능 */}
+          <div style={{
+            flex: 1,
+            padding: 16,
+            paddingLeft: 40,
+            display: 'flex',
+            flexDirection: 'column',
+            borderLeft: '4px solid black', // ← 왼쪽에만 선
+            alignItems: 'flex-start', // ← 자식 요소 왼쪽 정렬
+          }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginBottom: 20,
+            }}>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>2. 데이터 탐색</h4>
+              <p style={{ margin: 0, fontSize: 18 }}>진동과 소리로 데이터를 직관적으로 이해</p>
+            </div>
+
+            <button style={{
+              backgroundColor: '#2F6EBF',
+              color: '#fff',
+              padding: '12px 28px',
+              borderRadius: 8,
+              border: 'none',       // ← 테두리 제거
+              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
+              fontWeight: 600,
+              fontFamily: 'Pretendard',
+              cursor: 'pointer',
+              fontSize: 18,
+            }}>
+              지금 시작하기
+            </button>
+          </div>
+          {/* 3. 핵심 기능 */}
+          <div style={{
+            flex: 1,
+            padding: 16,
+            paddingLeft: 40,
+            display: 'flex',
+            flexDirection: 'column',
+            borderLeft: '4px solid black', // ← 왼쪽에만 선
+            alignItems: 'flex-start', // ← 자식 요소 왼쪽 정렬
+          }}>
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              marginBottom: 20,
+            }}>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>3. 데이터 학습</h4>
+              <p style={{ margin: 0, fontSize: 18 }}>수집한 데이터를 이용해 분류 모델 만들기</p>
+            </div>
+
+            <button style={{
+              backgroundColor: '#2F6EBF',
+              color: '#fff',
+              padding: '12px 28px',
+              borderRadius: 8,
+              border: 'none',       // ← 테두리 제거
+              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
+              fontWeight: 600,
+              fontFamily: 'Pretendard',
+              cursor: 'pointer',
+              fontSize: 18,
+            }}>
+              지금 시작하기
+            </button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      {/* 이미지가 들어가는 영역 */}
+      <div
+        style={{
+          width: '50%',
+          height: '65vh',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          fontFamily: "'Noto Sans KR', sans-serif",
+          backgroundImage: 'url(/images/main-image.jpg)',
+          backgroundSize: 'contain',
+          backgroundPosition: 'right center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#F5F0EA',
+        }}
+      >
       </div>
     </div>
   );
 }
+
+
+

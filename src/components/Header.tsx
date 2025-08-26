@@ -16,7 +16,7 @@ export default function Header() {
         top: 0,
         left: 0,
         width: '96vw',
-        backgroundColor: 'white',
+        backgroundColor: '#F5F0EA',
         color: 'black',
         display: 'flex',
         alignItems: 'center',
@@ -63,7 +63,7 @@ export default function Header() {
               fontFamily: "Outfit",
             }}
           >
-            for teacher
+            for student
           </div>
         </div>
       </a>

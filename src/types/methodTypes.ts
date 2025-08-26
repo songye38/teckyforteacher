@@ -5,6 +5,11 @@ export type DataPoint = {
     label: string; // user-provided context
 };
 
+export type TrainOptions= {
+    algorithm?: 'Nearest Centroid' | 'KNN' | 'Decision Tree' | 'Random';
+    removeOutliers?: boolean;
+}
+
 export type ExplorationKind =
     | "binning"
     | "labelMeans"
