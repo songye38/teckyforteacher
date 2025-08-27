@@ -268,31 +268,6 @@ export default function ModuleCommon() {
     }
 
 
-    // 모달 스타일 (중앙 고정 + 배경 어둡게)
-    const modalStyle: React.CSSProperties = {
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        backgroundColor: '#F5F0EA',
-        padding: 30,
-        borderRadius: 12,
-        boxShadow: '0 8px 24px rgba(0,0,0,0.3)',
-        zIndex: 1001,
-        fontSize: 24,
-        textAlign: 'center',
-        minWidth: 280,
-    };
-
-    const overlayStyle: React.CSSProperties = {
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100vw',
-        height: '100vh',
-        backgroundColor: 'rgba(0,0,0,0.4)',
-        zIndex: 1000,
-    };
 
     return (
         <div style={{ padding: 30, fontFamily: "'Noto Sans KR', sans-serif", color: '#222', display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -304,8 +279,8 @@ export default function ModuleCommon() {
                     <h2 style={{ margin: 0 }}>프로젝트 안내</h2>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <p style={{ fontSize: 18, lineHeight: '1.5' }}>
-                            이 프로젝트는 총 6개의 단계로 구성되어 있으며, 순서대로 진행하면 됩니다.<br />
-                            각 단계별로 완료 상태가 표시되며, 중간에 문제가 생기면 아래 <strong>초기화 버튼</strong>을 눌러 처음부터 다시 시작할 수 있습니다.
+                            지금까지 진행한 모든 단계를 초기화합니다. <br />
+                            학생이 프로젝트를 진행하다가 중간에 꼬이는 경우, 이 버튼을 눌러 초기화할 수 있도록 안내해주세요.
                         </p>
                     </div>
                 </div>
@@ -335,16 +310,17 @@ export default function ModuleCommon() {
                     />
                     모든 단계를 초기화하고 처음부터 시작하기
                 </button>
-
-                <div>
-                </div>
             </div>
 
             {/*  1️⃣ 과정(Process) 단계 */}
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
                     <h2 style={{ margin: 0 }}>1단계 아두이노 코드 복사하기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>선생님 도움을 받아 부품을 연결한 뒤, 버튼을 눌러 아두이노 코드를 복사하고 아두이노 소프트웨어에 붙여넣으세요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        코드 복사하기 버튼을 누르면 아두이노 연결 정보와 코드가 복사됩니다. <br />
+                        아두이노와 모듈을 연결하는 것이 어려울 수 있으므로, 도움이 필요한 학생이 있다면 연결을 도와주세요.<br />
+                        모든 코드를 정확히 복사해야 합니다. 일부 코드가 누락되면 컴파일 에러가 발생할 수 있습니다.<br />
+                    </p>
 
                 </div>
                 <div>
@@ -372,7 +348,13 @@ export default function ModuleCommon() {
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
                     <h2 style={{ margin: 0 }}>2단계 코드내용을 아두이노에 업로드하기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>부품 연결과 코드 붙여넣기가 끝났다면, 코드를 아두이노에 업로드하세요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        코드 컴파일이 완료되면 아두이노 보드에 코드를 업로드해주세요. <br />
+                        아두이노를 케이블로 컴퓨터와 연결하고, 적절한 보드를 선택한 후 업로드해야 합니다.<br />
+                        보드를 선택하지 않으면 업로드 에러가 발생합니다.<br />
+                        한 번 코드를 업로드한 후 초기화하고 다시 연결할 경우, 반드시 케이블을 분리한 뒤 다시 연결하고 코드를 업로드해야 합니다.<br />
+                        계속 연결된 상태에서 업로드하면 정상적으로 업로드되지 않습니다.
+                    </p>
 
                 </div>
                 <div>
@@ -401,7 +383,10 @@ export default function ModuleCommon() {
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 4 }}>
                     <h2 style={{ margin: 0 }}>3단계 레이블 추가하기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>추가된 레이블은 아래에서 확인할 수 있어요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        아두이노 보드를 통해 입력받는 값에 카테고리를 지정합니다. <br />
+                        예를 들어 심박수 모듈을 통해 값을 입력받는다면, “운동 후”, “시험 전”과 같이 현재 들어오는 값의 카테고리를 여러 레이블로 나눌 수 있습니다.
+                    </p>
                 </div>
                 <div style={{ marginBottom: 30 }}>
                     <input
@@ -439,6 +424,7 @@ export default function ModuleCommon() {
                     >
                         추가
                     </button>
+
 
                 </div>
 
@@ -484,7 +470,6 @@ export default function ModuleCommon() {
                         disabled={!(2 <= lastCompletedStep + 1)}                          // 접근 허용
                     />
                 </div>
-
             </div>
 
 
@@ -492,7 +477,11 @@ export default function ModuleCommon() {
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                     <h2 style={{ margin: 0 }}>4단계 라벨 선택 및 시리얼 연결하기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>시리얼 연결 버튼을 누르면, 아래 창에서 수집된 데이터를 확인할 수 있어요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        입력받은 값이 어떤 레이블에 속하는지 지정해야 합니다. <br />
+                        예를 들어 심박수 값이 들어온다면, 미리 만들어놓은 ‘운동 후’ 레이블에 해당 값을 매핑할 수 있습니다.<br />
+                        편의를 위해 여러 개의 레이블을 미리 만들어 놓고, 다양한 카테고리의 값을 각각 연결할 수 있습니다.
+                    </p>
                 </div>
 
                 {/* 레이블 선택 버튼 */}
@@ -536,6 +525,7 @@ export default function ModuleCommon() {
                             )}
                         </button>
                     ))}
+
                 </div>
 
                 {/* 버튼 영역 */}
@@ -593,31 +583,6 @@ export default function ModuleCommon() {
                         </p>
                     )}
                 </div>
-
-                {buttonPressed && (
-                    <>
-                        <div style={overlayStyle} />
-                        <div style={modalStyle}>
-                            <p>🔔 아두이노 버튼이 눌렸어요!</p>
-                            <button
-                                onClick={() => setButtonPressed(false)}
-                                style={{
-                                    marginTop: 24,
-                                    fontSize: 20,
-                                    padding: '8px 18px',
-                                    borderRadius: 8,
-                                    border: 'none',
-                                    backgroundColor: '#153F76',
-                                    color: 'white',
-                                    cursor: 'pointer',
-                                    boxShadow: '0 4px 8px rgba(25, 118, 210, 0.5)',
-                                }}
-                            >
-                                닫기
-                            </button>
-                        </div>
-                    </>
-                )}
             </div>
 
 
@@ -625,7 +590,9 @@ export default function ModuleCommon() {
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                     <h2 style={{ margin: 0 }}>5단계 시리얼 연결 해제하기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>작업이 끝나면 시리얼 연결을 안전하게 해제하세요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        더 이상 값을 저장하고 싶지 않다면 시리얼 연결 해제 버튼을 눌러주세요.
+                    </p>
 
                 </div>
                 <div>
@@ -655,7 +622,12 @@ export default function ModuleCommon() {
             <div style={{ backgroundColor: '#F5F5F5', padding: '20px', borderRadius: '12px', marginBottom: '12px' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                     <h2 style={{ margin: 0 }}>6단계 수집한 데이터 다운받기</h2>
-                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>지금까지 입력한 데이터를 버튼을 눌러 파일로 저장하세요.</p>
+                    <p style={{ fontSize: 18, lineHeight: '1.5' }}>
+                        지금까지 저장한 값은 .txt 파일로 저장됩니다. <br />
+                        이 데이터는 데이터 탐색 및 학습 단계에서도 사용되므로, 위 순서를 정확히 따라 다양한 값이 입력될 수 있도록 해주세요.
+
+
+                    </p>
 
                 </div>
                 <div>
