@@ -1,0 +1,23 @@
+.main {
+    padding:40px;
+    margin-top: 40px;
+}
+.question-section {
+    margin-bottom: 40px;
+}
+.question-header {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.question-content {
+    font-size: 22px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.caption {
+    font-size: 14px;
+}
