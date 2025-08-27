@@ -72,7 +72,7 @@ export default function Main() {
               alignItems: 'flex-start',
               marginBottom: 20,
             }}>
-              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>1. 데이터 수집</h4>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>1. 아두이노 기초</h4>
               <p style={{ margin: 0, fontSize: 18 }}>아두이노를 이용해 직접 데이터 수집</p>
             </div>
 
@@ -108,7 +108,7 @@ export default function Main() {
               alignItems: 'flex-start',
               marginBottom: 20,
             }}>
-              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>2. 데이터 탐색</h4>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>2. 데이터 수집</h4>
               <p style={{ margin: 0, fontSize: 18 }}>진동과 소리로 데이터를 직관적으로 이해</p>
             </div>
 
@@ -144,7 +144,7 @@ export default function Main() {
               alignItems: 'flex-start',
               marginBottom: 20,
             }}>
-              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>3. 데이터 학습</h4>
+              <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>3. 인공지능 윤리</h4>
               <p style={{ margin: 0, fontSize: 18 }}>수집한 데이터를 이용해 분류 모델 만들기</p>
             </div>
 
@@ -173,7 +173,7 @@ export default function Main() {
       <div
         style={{
           width: '50%',
-          height: '65vh',
+          height: '100vh',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -182,7 +182,6 @@ export default function Main() {
           backgroundSize: 'contain',
           backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat',
-          backgroundColor: '#F5F0EA',
         }}
       >
       </div>
