@@ -4,9 +4,11 @@ import { NavLink } from 'react-router-dom';
 export default function Header() {
   const navItems = [
     { label: '홈', path: '/' },
+    { label: '아두이노 기초', path: '/arduino' },
     { label: '데이터 수집', path: '/collect' },
-    { label: '데이터 탐색', path: '/explore' },
-    { label: '데이터 학습', path: '/train' },
+    // { label: '데이터 탐색', path: '/explore' },
+    // { label: '데이터 학습', path: '/train' },
+    { label: '인공지능 윤리', path: '/ethics' },
   ];
 
   return (
@@ -16,7 +18,7 @@ export default function Header() {
         top: 0,
         left: 0,
         width: '96vw',
-        backgroundColor: '#F5F0EA',
+        backgroundColor: 'white',
         color: 'black',
         display: 'flex',
         alignItems: 'center',
@@ -63,7 +65,7 @@ export default function Header() {
               fontFamily: "Outfit",
             }}
           >
-            for student
+            for Teacher
           </div>
         </div>
       </a>

@@ -2,10 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Main from './pages/Main';
-import Test from './pages/Test';
 import Collect from './pages/Collect';
-import Explore from './pages/Explore';
-import Train from './pages/Train';
+// import Explore from './pages/Explore';
+// import Train from './pages/Train';
+import Ethics from './pages/Ethics';
+import Arduino from './pages/Arduino'
 
 export default function App() {
   return (
@@ -16,9 +17,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/collect/*" element={<Collect />} />
-          <Route path="/explore/*" element={<Explore />} />
-          <Route path="/train/*" element={<Train />} />
-          <Route path="/test" element={<Test />} />
+          {/* <Route path="/explore/*" element={<Explore />} />
+          <Route path="/train/*" element={<Train />} /> */}
+          <Route path="/ethics" element={<Ethics />} />
+          <Route path="/arduino" element={<Arduino />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

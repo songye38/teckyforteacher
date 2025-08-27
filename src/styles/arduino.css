@@ -1,0 +1,46 @@
+h2 {
+    margin-bottom: 20px !important
+}
+
+.sub-section {
+    margin-bottom: 40px;
+}
+
+.sub-header {
+    font-size: 22px;
+    font-weight: 600;
+}
+.content {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.sub-content {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.caption {
+    font-size:14px;
+    padding-bottom:3px;
+    font-weight: 500;
+}
+.tip {
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    font-size: 15px;
+    color : black;
+    border: 2px solid #3370BD;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.buy-link {
+    color: black;
+    display: block;      /* 블록처럼 한 줄 차지 */
+    margin-bottom: 4px; /* 아래 간격 */
+    transition: color 0.2s;
+    font-size: 14px;
+}

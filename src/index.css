@@ -4,7 +4,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F5F0EA; /* 쉼표 → 세미콜론 */
+  background-color: white; /* 쉼표 → 세미콜론 */
 }
 
 code {
