@@ -42,7 +42,7 @@ export default function Main() {
           }}>
             Learn By Touch
           </h1>
-          <h3 style={{ fontFamily: 'Pretendard', marginTop: 8,fontSize:22 }}>
+          <h3 style={{ fontFamily: 'Pretendard', marginTop: 8, fontSize: 22 }}>
             손끝으로 느끼며 배우는 체험형 학습 플랫폼
           </h3>
         </div>
@@ -53,7 +53,7 @@ export default function Main() {
           AI와 센서를 활용한 체험형 실습으로, 누구나 쉽게 배우고 탐험할 수 있습니다.
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 24,marginTop:80 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 24, marginTop: 80 }}>
           <h1>세가지 핵심 기능</h1>
           {/* 1. 핵심 기능 */}
           <div style={{
@@ -76,20 +76,24 @@ export default function Main() {
               <p style={{ margin: 0, fontSize: 18 }}>아두이노를 이용해 직접 데이터 수집</p>
             </div>
 
-            <button style={{
-              backgroundColor: '#2F6EBF',
-              color: '#fff',
-              padding: '12px 28px',
-              borderRadius: 8,
-              border: 'none',       // ← 테두리 제거
-              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
-              fontWeight: 600,
-              fontFamily: 'Pretendard',
-              cursor: 'pointer',
-              fontSize: 18,
-            }}>
+            <a
+              href="https://www.teckyforteacher.co.kr/arduino"   // 원하는 경로
+              style={{
+                display: "inline-block",
+                backgroundColor: "#F88B5B",
+                color: "#fff",
+                padding: "12px 28px",
+                borderRadius: 8,
+                fontWeight: 600,
+                fontFamily: "Pretendard",
+                cursor: "pointer",
+                fontSize: 18,
+                textDecoration: "none" // 밑줄 제거
+              }}
+            >
               지금 시작하기
-            </button>
+            </a>
+
           </div>
           {/* 2. 핵심 기능 */}
           <div style={{
@@ -112,20 +116,24 @@ export default function Main() {
               <p style={{ margin: 0, fontSize: 18 }}>진동과 소리로 데이터를 직관적으로 이해</p>
             </div>
 
-            <button style={{
-              backgroundColor: '#2F6EBF',
-              color: '#fff',
-              padding: '12px 28px',
-              borderRadius: 8,
-              border: 'none',       // ← 테두리 제거
-              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
-              fontWeight: 600,
-              fontFamily: 'Pretendard',
-              cursor: 'pointer',
-              fontSize: 18,
-            }}>
+            <a
+              href="https://www.teckyforteacher.co.kr/collect/module1"   // 원하는 경로
+              style={{
+                display: "inline-block",
+                backgroundColor: "#F88B5B",
+                color: "#fff",
+                padding: "12px 28px",
+                borderRadius: 8,
+                fontWeight: 600,
+                fontFamily: "Pretendard",
+                cursor: "pointer",
+                fontSize: 18,
+                textDecoration: "none" // 밑줄 제거
+              }}
+            >
               지금 시작하기
-            </button>
+            </a>
+
           </div>
           {/* 3. 핵심 기능 */}
           <div style={{
@@ -148,20 +156,24 @@ export default function Main() {
               <p style={{ margin: 0, fontSize: 18 }}>수집한 데이터를 이용해 분류 모델 만들기</p>
             </div>
 
-            <button style={{
-              backgroundColor: '#2F6EBF',
-              color: '#fff',
-              padding: '12px 28px',
-              borderRadius: 8,
-              border: 'none',       // ← 테두리 제거
-              outline: 'none',      // ← 클릭 시 생기는 테두리 제거
-              fontWeight: 600,
-              fontFamily: 'Pretendard',
-              cursor: 'pointer',
-              fontSize: 18,
-            }}>
+            <a
+              href="https://www.teckyforteacher.co.kr/ethics"   // 원하는 경로
+              style={{
+                display: "inline-block",
+                backgroundColor: "#F88B5B",
+                color: "#fff",
+                padding: "12px 28px",
+                borderRadius: 8,
+                fontWeight: 600,
+                fontFamily: "Pretendard",
+                cursor: "pointer",
+                fontSize: 18,
+                textDecoration: "none" // 밑줄 제거
+              }}
+            >
               지금 시작하기
-            </button>
+            </a>
+
           </div>
 
         </div>
