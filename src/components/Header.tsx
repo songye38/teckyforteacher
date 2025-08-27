@@ -47,7 +47,7 @@ export default function Header() {
         >
           <div
             style={{
-              color: '#2F6EBF',
+              color: '#FA7033',
               fontSize: 52,
               fontWeight: '400',
               userSelect: 'none',
@@ -58,7 +58,7 @@ export default function Header() {
           </div>
           <div
             style={{
-              color: '#045ACB',
+              color: '#FA7033',
               fontSize: 20,
               fontWeight: '500',
               userSelect: 'none',

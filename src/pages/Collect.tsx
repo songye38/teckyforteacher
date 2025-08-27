@@ -5,15 +5,15 @@ import Module1 from './../modules/Module1';
 import Module2 from './../modules/Module2';
 import Module3 from './../modules/Module3';
 import Module4 from './../modules/Module4';
-import Module5 from './../modules/Module5';
+import ModuleCommon from './../modules/ModuleCommon';
 
 export default function Collect() {
     const modules = [
+        { id: 'moduleCommon', label: '공통 가이드', title: '먼저 읽어주세요.' },
         { id: 'module1', label: '프로젝트 1', title: '심박 센서로 심장 박동 기록하기' },
         { id: 'module2', label: '프로젝트 2', title: '조도 센서로 빛 세기 기록하기' },
         { id: 'module3', label: '프로젝트 3', title: '컬러 센서로 색상 값 측정하기' },
         { id: 'module4', label: '프로젝트 4', title: '소리 센서로 소리 크기 측정하기' },
-        // { id: 'module5', label: '프로젝트 5', title: '업데이트 버전 테스트' },
     ];
 
     const location = useLocation();
@@ -103,6 +103,7 @@ export default function Collect() {
                     <Route path="module2" element={<Module2 />} />
                     <Route path="module3" element={<Module3 />} />
                     <Route path="module4" element={<Module4 />} />
+                    <Route path="moduleCommon" element={<ModuleCommon />} />
                     {/* <Route path="module5" element={<Module5 />} /> */}
                 </Routes>
             </div>

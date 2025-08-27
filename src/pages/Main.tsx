@@ -40,7 +40,7 @@ export default function Main() {
             userSelect: 'none',
             fontFamily: "Outfit",
           }}>
-            Learn By Touch
+            Page for Teachers
           </h1>
           <h3 style={{ fontFamily: 'Pretendard', marginTop: 8, fontSize: 22 }}>
             손끝으로 느끼며 배우는 체험형 학습 플랫폼
@@ -73,7 +73,7 @@ export default function Main() {
               marginBottom: 20,
             }}>
               <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>1. 아두이노 기초</h4>
-              <p style={{ margin: 0, fontSize: 18 }}>아두이노를 이용해 직접 데이터 수집</p>
+              <p style={{ margin: 0, fontSize: 18 }}>아두이노 기초 사용법과 필요한 부품에 대해 알려드립니다.</p>
             </div>
 
             <a
@@ -81,7 +81,7 @@ export default function Main() {
               style={{
                 display: "inline-block",
                 backgroundColor: "#F88B5B",
-                color: "#fff",
+                color: "white",
                 padding: "12px 28px",
                 borderRadius: 8,
                 fontWeight: 600,
@@ -91,7 +91,7 @@ export default function Main() {
                 textDecoration: "none" // 밑줄 제거
               }}
             >
-              지금 시작하기
+              바로가기
             </a>
 
           </div>
@@ -113,7 +113,7 @@ export default function Main() {
               marginBottom: 20,
             }}>
               <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>2. 데이터 수집</h4>
-              <p style={{ margin: 0, fontSize: 18 }}>진동과 소리로 데이터를 직관적으로 이해</p>
+              <p style={{ margin: 0, fontSize: 18 }}>각 프로젝트별 필요한 부품과 코드 연결도를 알려드립니다.</p>
             </div>
 
             <a
@@ -131,7 +131,7 @@ export default function Main() {
                 textDecoration: "none" // 밑줄 제거
               }}
             >
-              지금 시작하기
+              바로가기
             </a>
 
           </div>
@@ -153,7 +153,7 @@ export default function Main() {
               marginBottom: 20,
             }}>
               <h4 style={{ color: 'black', fontSize: 22, marginBottom: 12, marginTop: 0 }}>3. 인공지능 윤리</h4>
-              <p style={{ margin: 0, fontSize: 18 }}>수집한 데이터를 이용해 분류 모델 만들기</p>
+              <p style={{ margin: 0, fontSize: 18 }}>프로젝트들을 수행하면서 학생들과 함께 이야기 나눌 수 있는<br /> 질문들을 정리해 놓았습니다.</p>
             </div>
 
             <a
@@ -171,7 +171,7 @@ export default function Main() {
                 textDecoration: "none" // 밑줄 제거
               }}
             >
-              지금 시작하기
+              바로가기
             </a>
 
           </div>
