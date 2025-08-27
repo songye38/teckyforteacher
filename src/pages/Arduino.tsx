@@ -179,7 +179,7 @@ export default function Arduino() {
                                 <div className="sub-content">납땜 없이 부품을 꽂아 실험할 수 있는 판입니다. 선생님들이 학생과 함께 빠르게 실습할 때 유용합니다.</div>
                                 <img
                                     src="/images/materials/breadboard_1.jpeg"
-                                    alt="브레드보드 이미지 첫 번째" 
+                                    alt="브레드보드 이미지 첫 번째"
                                     style={{ width: 280 }}
                                 />
                                 <img
@@ -405,9 +405,12 @@ export default function Arduino() {
                         <h2 style={{ margin: 0 }}>4-1. 코드 컴파일</h2>
                     </div>
                     <div className="content">
+                        코드를 작성한 뒤에는 먼저 코드에 오류가 없는지 확인하는 과정이 필요합니다. <br />
+                        이 과정을 <strong>컴파일(compile)</strong>이라고 하는데, 코드에 오류가 없으면 <strong>done compile</strong>이 표시되고, 오류가 있으면 <strong>error 메시지</strong>가 나타납니다. <br />
+                        ChatGPT가 작성해준 코드는 그대로 복사해서 사용하는 것을 권장하며, 만약 그럼에도 불구하고 오류가 발생한다면 에러 메시지를 복사해 ChatGPT에게 해결 방법을 물어보면 됩니다. <br />
 
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'row' ,gap:12}}>
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: 12 }}>
                         <img
                             src="/images/connection/arduino_compile_done.png"
                             alt="아두이노 ide에서 코드 컴파일에 성공했을 때 이미지"
@@ -428,9 +431,11 @@ export default function Arduino() {
                         <h2 style={{ margin: 0 }}>4-2. 코드 업로드</h2>
                     </div>
                     <div className="content">
-
+                        코드 컴파일이 정상적으로 끝나면 작성한 코드를 아두이노에 업로드해야 합니다. <br />
+                        업로드하기 전에 반드시 컴퓨터와 아두이노 보드를 연결해주세요.<br />
+                        그리고 업로드 버튼 오른쪽에서 연결된 아두이노 보드를 선택해야 합니다. <br />(일반적으로는 자동으로 선택되지만, 케이블을 뽑았다가 다시 연결하면 자동으로 인식되지 않을 수 있으니 오류가 발생하면 직접 확인해 주세요.)
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'row',gap:12 }}>
+                    <div style={{ display: 'flex', flexDirection: 'row', gap: 12 }}>
                         <img
                             src="/images/connection/arduino_upload_done.png"
                             alt="아두이노에 업로드 성공했을 때 이미지"
